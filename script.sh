@@ -66,7 +66,7 @@ cat << EOF > $IACPATH/docker-install.sh
 WORKSPACE=$(pwd)
 SOURCEPATH="${WORKSPACE}/sources"
 IACPATH="${WORKSPACE}/iac"
-BUILD_REPOSITORY_NAME="ms-demo"
+BUILD_REPOSITORY_NAME="BFF-Spotify"
 cd \$SOURCEPATH
 rm -rf \$BUILD_REPOSITORY_NAME
 git clone https://github.com/jorgeRodriguezAntiquera/BFF-Spotify.git
