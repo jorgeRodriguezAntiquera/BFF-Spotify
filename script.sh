@@ -4,17 +4,17 @@ echo "################################################################"
 echo "	INSTALL DOCKER "
 echo "################################################################"
 sudo apt install yum
-sudo yum install -y wget
-sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+sudo apt-get install -y wget
+sudo apt-get install -y yum-utils device-mapper-persistent-data lvm2
 sudo wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-17.09.1.ce-1.el7.centos.x86_64.rpm
-sudo yum install -y https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-17.09.1.ce-1.el7.centos.x86_64.rpm
+sudo apt-get install -y https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-17.09.1.ce-1.el7.centos.x86_64.rpm
 sudo systemctl enable docker && systemctl start docker
 
 echo "################################################################"
 echo "	INSTALL JAVA "
 echo "################################################################"
 
-sudo yum install -y java-1.8.0-openjdk-devel
+sudo apt-get install -y java-1.8.0-openjdk-devel
 #java -version
 
 
