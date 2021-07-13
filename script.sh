@@ -3,7 +3,8 @@
 echo "################################################################"
 echo "	INSTALL DOCKER "
 echo "################################################################"
-
+sudo apt update -y
+sudo apt install -y yum-utils
 sudo yum install -y wget
 sudo yum install -y yum-utils device-mapper-persistent-data lvm2
 sudo wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-17.09.1.ce-1.el7.centos.x86_64.rpm
